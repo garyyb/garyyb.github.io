@@ -1,7 +1,10 @@
 <content>
   <h1>My Portfolio</h1>
   <div *ngIf="selected; else portfolio_index">
-    <h3>{{selected}}</h3>
+    <portfolio-barnet *ngIf="selected === 'barnet'"></portfolio-barnet>
+    <portfolio-robocup *ngIf="selected ==='robocup'"></portfolio-robocup>
+    <portfolio-wit *ngIf="selected === 'wit'"></portfolio-wit>
+    <portfolio-beta *ngIf="selected === 'beta'"></portfolio-beta>
     <a (click)="unselect()">return;</a>
   </div>
   <ng-template #portfolio_index>

@@ -5,6 +5,10 @@ import { RouterModule } from '@angular/router'
 import { AppComponent } from './app.component';
 import { AboutComponent } from "./about.component";
 import { PortfolioBaseComponent } from "./portfolio-base.component";
+import { PortfolioBarnetComponent } from "./portfolio-barnet.component";
+import { PortfolioRobocupComponent } from "./portfolio-robocup.component";
+import { PortfolioWitComponent } from "./portfolio-wit.component";
+import { PortfolioBetaComponent } from "./portfolio-beta.component";
 
 const router = RouterModule.forRoot([
   {
@@ -22,6 +26,10 @@ const router = RouterModule.forRoot([
     AppComponent,
     AboutComponent,
     PortfolioBaseComponent,
+    PortfolioBarnetComponent,
+    PortfolioRobocupComponent,
+    PortfolioWitComponent,
+    PortfolioBetaComponent
   ],
   imports: [
     BrowserModule,
