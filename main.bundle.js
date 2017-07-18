@@ -85,7 +85,7 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__about_component__ = __webpack_require__("../../../../../src/app/about.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__portfolio_index_component__ = __webpack_require__("../../../../../src/app/portfolio-index.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__portfolio_base_component__ = __webpack_require__("../../../../../src/app/portfolio-base.component.ts");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -102,11 +102,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var router = __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* RouterModule */].forRoot([
     {
         path: 'about',
-        component: __WEBPACK_IMPORTED_MODULE_4__about_component__["a" /* AboutComponent */]
+        component: __WEBPACK_IMPORTED_MODULE_4__about_component__["a" /* AboutComponent */],
     },
     {
         path: 'portfolio',
-        component: __WEBPACK_IMPORTED_MODULE_5__portfolio_index_component__["a" /* PortfolioIndexComponent */]
+        component: __WEBPACK_IMPORTED_MODULE_5__portfolio_base_component__["a" /* PortfolioBaseComponent */],
     }
 ]);
 var AppModule = (function () {
@@ -119,7 +119,7 @@ AppModule = __decorate([
         declarations: [
             __WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* AppComponent */],
             __WEBPACK_IMPORTED_MODULE_4__about_component__["a" /* AboutComponent */],
-            __WEBPACK_IMPORTED_MODULE_5__portfolio_index_component__["a" /* PortfolioIndexComponent */]
+            __WEBPACK_IMPORTED_MODULE_5__portfolio_base_component__["a" /* PortfolioBaseComponent */],
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -134,12 +134,12 @@ AppModule = __decorate([
 
 /***/ }),
 
-/***/ "../../../../../src/app/portfolio-index.component.ts":
+/***/ "../../../../../src/app/portfolio-base.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PortfolioIndexComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PortfolioBaseComponent; });
 /**
  * Created by Gary on 18-Jul-17.
  */
@@ -150,20 +150,26 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 
-var PortfolioIndexComponent = (function () {
-    function PortfolioIndexComponent() {
+var PortfolioBaseComponent = (function () {
+    function PortfolioBaseComponent() {
     }
-    return PortfolioIndexComponent;
+    PortfolioBaseComponent.prototype.select = function (s) {
+        this.selected = s;
+    };
+    PortfolioBaseComponent.prototype.unselect = function () {
+        this.selected = null;
+    };
+    return PortfolioBaseComponent;
 }());
-PortfolioIndexComponent = __decorate([
+PortfolioBaseComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_0" /* Component */])({
         selector: 'portfolio',
-        template: __webpack_require__("../../../../../src/app/templates/portfolio-index.component.html"),
+        template: __webpack_require__("../../../../../src/app/templates/portfolio-base.component.html"),
         styleUrls: []
     })
-], PortfolioIndexComponent);
+], PortfolioBaseComponent);
 
-//# sourceMappingURL=portfolio-index.component.js.map
+//# sourceMappingURL=portfolio-base.component.js.map
 
 /***/ }),
 
@@ -181,10 +187,10 @@ module.exports = "<!-- Main -->\n<div id=\"wrapper\">\n  <section id=\"main\">\n
 
 /***/ }),
 
-/***/ "../../../../../src/app/templates/portfolio-index.component.html":
+/***/ "../../../../../src/app/templates/portfolio-base.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<content>\r\n  <h1>My Portfolio</h1>\r\n</content>\r\n"
+module.exports = "<content>\r\n  <h1>My Portfolio</h1>\r\n  <div *ngIf=\"selected; else portfolio_index\">\r\n    <h3>{{selected}}</h3>\r\n    <a (click)=\"unselect()\">return;</a>\r\n  </div>\r\n  <ng-template #portfolio_index>\r\n    Present:\r\n    <p>\r\n      <a (click)=\"select('barnet')\">Software Engineer at Barnet Australia</a>\r\n      <br/>\r\n      <a (click)=\"select('robocup')\">Developer for UNSW Australia Robocup SPL Team</a>\r\n      <br/>\r\n      <a (click)=\"select('wit')\">Writer for UNSW Women in Technology</a>\r\n      <br/>\r\n      <a (click)=\"select('beta')\">Writer for CSESoc Beta Magazine</a>\r\n      <br/>\r\n    </p>\r\n    Past:\r\n    <p>\r\n      —\r\n    </p>\r\n  </ng-template>\r\n</content>\r\n"
 
 /***/ }),
 
