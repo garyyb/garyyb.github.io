@@ -183,6 +183,10 @@
     letter-spacing: normal;
   }
 
+  content a {
+    color: cornflowerblue;
+  }
+
 	p {
 		margin: 0 0 1.5em 0;
 	}
