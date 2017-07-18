@@ -86,6 +86,10 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__about_component__ = __webpack_require__("../../../../../src/app/about.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__portfolio_base_component__ = __webpack_require__("../../../../../src/app/portfolio-base.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__portfolio_barnet_component__ = __webpack_require__("../../../../../src/app/portfolio-barnet.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__portfolio_robocup_component__ = __webpack_require__("../../../../../src/app/portfolio-robocup.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__portfolio_wit_component__ = __webpack_require__("../../../../../src/app/portfolio-wit.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__portfolio_beta_component__ = __webpack_require__("../../../../../src/app/portfolio-beta.component.ts");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -93,6 +97,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
+
+
 
 
 
@@ -120,6 +128,10 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* AppComponent */],
             __WEBPACK_IMPORTED_MODULE_4__about_component__["a" /* AboutComponent */],
             __WEBPACK_IMPORTED_MODULE_5__portfolio_base_component__["a" /* PortfolioBaseComponent */],
+            __WEBPACK_IMPORTED_MODULE_6__portfolio_barnet_component__["a" /* PortfolioBarnetComponent */],
+            __WEBPACK_IMPORTED_MODULE_7__portfolio_robocup_component__["a" /* PortfolioRobocupComponent */],
+            __WEBPACK_IMPORTED_MODULE_8__portfolio_wit_component__["a" /* PortfolioWitComponent */],
+            __WEBPACK_IMPORTED_MODULE_9__portfolio_beta_component__["a" /* PortfolioBetaComponent */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -131,6 +143,39 @@ AppModule = __decorate([
 ], AppModule);
 
 //# sourceMappingURL=app.module.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/portfolio-barnet.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PortfolioBarnetComponent; });
+/**
+ * Created by Gary on 18-Jul-17.
+ */
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var PortfolioBarnetComponent = (function () {
+    function PortfolioBarnetComponent() {
+    }
+    return PortfolioBarnetComponent;
+}());
+PortfolioBarnetComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_0" /* Component */])({
+        selector: 'portfolio-barnet',
+        template: __webpack_require__("../../../../../src/app/templates/portfolio-barnet.component.html"),
+        styleUrls: []
+    })
+], PortfolioBarnetComponent);
+
+//# sourceMappingURL=portfolio-barnet.component.js.map
 
 /***/ }),
 
@@ -173,6 +218,105 @@ PortfolioBaseComponent = __decorate([
 
 /***/ }),
 
+/***/ "../../../../../src/app/portfolio-beta.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PortfolioBetaComponent; });
+/**
+ * Created by Gary on 18-Jul-17.
+ */
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var PortfolioBetaComponent = (function () {
+    function PortfolioBetaComponent() {
+    }
+    return PortfolioBetaComponent;
+}());
+PortfolioBetaComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_0" /* Component */])({
+        selector: 'portfolio-beta',
+        template: __webpack_require__("../../../../../src/app/templates/portfolio-beta.component.html"),
+        styleUrls: []
+    })
+], PortfolioBetaComponent);
+
+//# sourceMappingURL=portfolio-beta.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/portfolio-robocup.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PortfolioRobocupComponent; });
+/**
+ * Created by Gary on 18-Jul-17.
+ */
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var PortfolioRobocupComponent = (function () {
+    function PortfolioRobocupComponent() {
+    }
+    return PortfolioRobocupComponent;
+}());
+PortfolioRobocupComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_0" /* Component */])({
+        selector: 'portfolio-robocup',
+        template: __webpack_require__("../../../../../src/app/templates/portfolio-robocup.component.html"),
+        styleUrls: []
+    })
+], PortfolioRobocupComponent);
+
+//# sourceMappingURL=portfolio-robocup.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/portfolio-wit.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PortfolioWitComponent; });
+/**
+ * Created by Gary on 18-Jul-17.
+ */
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var PortfolioWitComponent = (function () {
+    function PortfolioWitComponent() {
+    }
+    return PortfolioWitComponent;
+}());
+PortfolioWitComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_0" /* Component */])({
+        selector: 'portfolio-wit',
+        template: __webpack_require__("../../../../../src/app/templates/portfolio-wit.component.html"),
+        styleUrls: []
+    })
+], PortfolioWitComponent);
+
+//# sourceMappingURL=portfolio-wit.component.js.map
+
+/***/ }),
+
 /***/ "../../../../../src/app/templates/about.component.html":
 /***/ (function(module, exports) {
 
@@ -187,10 +331,38 @@ module.exports = "<!-- Main -->\n<div id=\"wrapper\">\n  <section id=\"main\">\n
 
 /***/ }),
 
+/***/ "../../../../../src/app/templates/portfolio-barnet.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>Developer at BarNet Australia.</p>\r\n"
+
+/***/ }),
+
 /***/ "../../../../../src/app/templates/portfolio-base.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<content>\r\n  <h1>My Portfolio</h1>\r\n  <div *ngIf=\"selected; else portfolio_index\">\r\n    <h3>{{selected}}</h3>\r\n    <a (click)=\"unselect()\">return;</a>\r\n  </div>\r\n  <ng-template #portfolio_index>\r\n    Present:\r\n    <p>\r\n      <a (click)=\"select('barnet')\">Software Engineer at Barnet Australia</a>\r\n      <br/>\r\n      <a (click)=\"select('robocup')\">Developer for UNSW Australia Robocup SPL Team</a>\r\n      <br/>\r\n      <a (click)=\"select('wit')\">Writer for UNSW Women in Technology</a>\r\n      <br/>\r\n      <a (click)=\"select('beta')\">Writer for CSESoc Beta Magazine</a>\r\n      <br/>\r\n    </p>\r\n    Past:\r\n    <p>\r\n      —\r\n    </p>\r\n  </ng-template>\r\n</content>\r\n"
+module.exports = "<content>\r\n  <h1>My Portfolio</h1>\r\n  <div *ngIf=\"selected; else portfolio_index\">\r\n    <portfolio-barnet *ngIf=\"selected === 'barnet'\"></portfolio-barnet>\r\n    <portfolio-robocup *ngIf=\"selected ==='robocup'\"></portfolio-robocup>\r\n    <portfolio-wit *ngIf=\"selected === 'wit'\"></portfolio-wit>\r\n    <portfolio-beta *ngIf=\"selected === 'beta'\"></portfolio-beta>\r\n    <a (click)=\"unselect()\">return;</a>\r\n  </div>\r\n  <ng-template #portfolio_index>\r\n    Present:\r\n    <p>\r\n      <a (click)=\"select('barnet')\">Software Engineer at Barnet Australia</a>\r\n      <br/>\r\n      <a (click)=\"select('robocup')\">Developer for UNSW Australia Robocup SPL Team</a>\r\n      <br/>\r\n      <a (click)=\"select('wit')\">Writer for UNSW Women in Technology</a>\r\n      <br/>\r\n      <a (click)=\"select('beta')\">Writer for CSESoc Beta Magazine</a>\r\n      <br/>\r\n    </p>\r\n    Past:\r\n    <p>\r\n      —\r\n    </p>\r\n  </ng-template>\r\n</content>\r\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/templates/portfolio-beta.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>beta</p>\r\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/templates/portfolio-robocup.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>Robocup.</p>\r\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/templates/portfolio-wit.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>WIT</p>\r\n"
 
 /***/ }),
 
