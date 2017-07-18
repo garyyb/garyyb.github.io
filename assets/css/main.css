@@ -132,7 +132,6 @@
 		font-weight: 300;
 		line-height: 2;
 		letter-spacing: 0.2em;
-		text-transform: uppercase;
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -180,6 +179,14 @@
 		font-style: italic;
 	}
 
+  content {
+    letter-spacing: normal;
+  }
+
+  content a {
+    color: cornflowerblue;
+  }
+
 	p {
 		margin: 0 0 1.5em 0;
 	}
@@ -188,6 +195,7 @@
 		color: #313f47;
 		line-height: 1.5;
 		margin: 0 0 0.75em 0;
+    text-transform: uppercase;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {

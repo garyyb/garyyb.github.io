@@ -13,28 +13,36 @@ webpackEmptyContext.id = "../../../../../src async recursive";
 
 /***/ }),
 
-/***/ "../../../../../src/app/app.component.css":
-/***/ (function(module, exports, __webpack_require__) {
+/***/ "../../../../../src/app/about.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
-// imports
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AboutComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+/**
+ * Created by Gary on 18-Jul-17.
+ */
 
+var AboutComponent = (function () {
+    function AboutComponent() {
+    }
+    return AboutComponent;
+}());
+AboutComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_0" /* Component */])({
+        selector: 'about',
+        template: __webpack_require__("../../../../../src/app/templates/about.component.html"),
+        styleUrls: []
+    })
+], AboutComponent);
 
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ "../../../../../src/app/app.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<!-- Main -->\n<div id=\"wrapper\">\n  <section id=\"main\">\n    <header>\n      <h1>Gary Bai</h1>\n      <p><a href=\"#\">About Me</a> | <a href=\"#\">Portfolio</a> | <a href=\"#\">Contact Me</a></p>\n    </header>\n    <router-outlet></router-outlet>\n    <hr>\n    <footer>\n      <ul class=\"icons\">\n        <li><a href=\"#\" class=\"fa-linkedin\">LinkedIn</a></li>\n        <li><a href=\"#\" class=\"fa-github\">GitHub</a></li>\n        <li><a href=\"#\" class=\"fa-bitbucket\">BitBucket</a></li>\n      </ul>\n    </footer>\n  </section>\n\n  <!-- Footer -->\n  <footer id=\"footer\">\n    <ul class=\"copyright\">\n      <li>&copy; Gary Bai</li><li>Index Design: <a href=\"http://html5up.net\">HTML5 UP</a></li><li>Built using Angular</li>\n    </ul>\n  </footer>\n</div>\n"
+//# sourceMappingURL=about.component.js.map
 
 /***/ }),
 
@@ -53,15 +61,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 var AppComponent = (function () {
     function AppComponent() {
-        this.title = 'app';
     }
     return AppComponent;
 }());
 AppComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_0" /* Component */])({
         selector: 'app-root',
-        template: __webpack_require__("../../../../../src/app/app.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/app.component.css")]
+        template: __webpack_require__("../../../../../src/app/templates/app.component.html"),
+        styleUrls: []
     })
 ], AppComponent);
 
@@ -77,6 +84,8 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__about_component__ = __webpack_require__("../../../../../src/app/about.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__portfolio_index_component__ = __webpack_require__("../../../../../src/app/portfolio-index.component.ts");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -88,7 +97,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var router = __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* RouterModule */].forRoot([]);
+
+
+var router = __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* RouterModule */].forRoot([
+    {
+        path: 'about',
+        component: __WEBPACK_IMPORTED_MODULE_4__about_component__["a" /* AboutComponent */]
+    },
+    {
+        path: 'portfolio',
+        component: __WEBPACK_IMPORTED_MODULE_5__portfolio_index_component__["a" /* PortfolioIndexComponent */]
+    }
+]);
 var AppModule = (function () {
     function AppModule() {
     }
@@ -97,7 +117,9 @@ var AppModule = (function () {
 AppModule = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* NgModule */])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* AppComponent */]
+            __WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* AppComponent */],
+            __WEBPACK_IMPORTED_MODULE_4__about_component__["a" /* AboutComponent */],
+            __WEBPACK_IMPORTED_MODULE_5__portfolio_index_component__["a" /* PortfolioIndexComponent */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -109,6 +131,60 @@ AppModule = __decorate([
 ], AppModule);
 
 //# sourceMappingURL=app.module.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/portfolio-index.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PortfolioIndexComponent; });
+/**
+ * Created by Gary on 18-Jul-17.
+ */
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var PortfolioIndexComponent = (function () {
+    function PortfolioIndexComponent() {
+    }
+    return PortfolioIndexComponent;
+}());
+PortfolioIndexComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_0" /* Component */])({
+        selector: 'portfolio',
+        template: __webpack_require__("../../../../../src/app/templates/portfolio-index.component.html"),
+        styleUrls: []
+    })
+], PortfolioIndexComponent);
+
+//# sourceMappingURL=portfolio-index.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/templates/about.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<content>\r\n  <h1>About me</h1>\r\n  <p>\r\n    Hi! <br/>\r\n  </p>\r\n  <p>\r\n    My name's Gary.\r\n    I'm currently studying Mathematics and Computer Science at the University of New South Wales (UNSW) Australia. <br/>\r\n  </p>\r\n  <p>\r\n    I currently work as a Software Engineer at <a href=\"http://barnet.com.au/\">BarNet Australia</a>, where I primarily do Web Development.\r\n  </p>\r\n</content>\r\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/templates/app.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<!-- Main -->\n<div id=\"wrapper\">\n  <section id=\"main\">\n    <header>\n      <h1>Gary Bai</h1>\n      <p><a href=\"/about\">About Me</a> | <a href=\"/portfolio\">Portfolio</a> | <a href=\"#\">Contact Me</a></p>\n    </header>\n    <router-outlet></router-outlet>\n    <hr>\n    <footer>\n      <ul class=\"icons\">\n        <li><a href=\"https://www.linkedin.com/in/garyyb/\" class=\"fa-linkedin\">LinkedIn</a></li>\n        <li><a href=\"https://github.com/garyyb\" class=\"fa-github\">GitHub</a></li>\n      </ul>\n    </footer>\n  </section>\n\n  <!-- Footer -->\n  <footer id=\"footer\">\n    <ul class=\"copyright\">\n      <li>&copy; Gary Bai</li><li>Index Design: <a href=\"http://html5up.net\">HTML5 UP</a></li><li>Built using Angular</li>\n    </ul>\n  </footer>\n</div>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/templates/portfolio-index.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<content>\r\n  <h1>My Portfolio</h1>\r\n</content>\r\n"
 
 /***/ }),
 
