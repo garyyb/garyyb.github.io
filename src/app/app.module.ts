@@ -4,18 +4,24 @@ import { RouterModule } from '@angular/router'
 
 import { AppComponent } from './app.component';
 import { AboutComponent } from "./about.component";
+import { PortfolioBaseComponent } from "./portfolio-base.component";
 
 const router = RouterModule.forRoot([
   {
     path      : 'about',
-    component : AboutComponent
+    component : AboutComponent,
+  },
+  {
+    path      : 'portfolio',
+    component : PortfolioBaseComponent,
   }
 ]);
 
 @NgModule({
   declarations: [
     AppComponent,
-    AboutComponent
+    AboutComponent,
+    PortfolioBaseComponent,
   ],
   imports: [
     BrowserModule,

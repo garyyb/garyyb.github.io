@@ -1,0 +1,24 @@
+<content>
+  <h1>My Portfolio</h1>
+  <div *ngIf="selected; else portfolio_index">
+    <h3>{{selected}}</h3>
+    <a (click)="unselect()">return;</a>
+  </div>
+  <ng-template #portfolio_index>
+    Present:
+    <p>
+      <a (click)="select('barnet')">Software Engineer at Barnet Australia</a>
+      <br/>
+      <a (click)="select('robocup')">Developer for UNSW Australia Robocup SPL Team</a>
+      <br/>
+      <a (click)="select('wit')">Writer for UNSW Women in Technology</a>
+      <br/>
+      <a (click)="select('beta')">Writer for CSESoc Beta Magazine</a>
+      <br/>
+    </p>
+    Past:
+    <p>
+      —
+    </p>
+  </ng-template>
+</content>
