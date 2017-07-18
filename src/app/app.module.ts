@@ -3,13 +3,19 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router'
 
 import { AppComponent } from './app.component';
+import { AboutComponent } from "./about.component";
 
 const router = RouterModule.forRoot([
+  {
+    path      : 'about',
+    component : AboutComponent
+  }
 ]);
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
