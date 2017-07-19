@@ -9,6 +9,7 @@ import { PortfolioBarnetComponent } from "./portfolio-barnet.component";
 import { PortfolioRobocupComponent } from "./portfolio-robocup.component";
 import { PortfolioWitComponent } from "./portfolio-wit.component";
 import { PortfolioBetaComponent } from "./portfolio-beta.component";
+import { ContactComponent } from "./contact.component";
 
 const router = RouterModule.forRoot([
   {
@@ -18,6 +19,10 @@ const router = RouterModule.forRoot([
   {
     path      : 'portfolio',
     component : PortfolioBaseComponent,
+  },
+  {
+    path      : 'contact',
+    component : ContactComponent
   }
 ]);
 
@@ -29,7 +34,8 @@ const router = RouterModule.forRoot([
     PortfolioBarnetComponent,
     PortfolioRobocupComponent,
     PortfolioWitComponent,
-    PortfolioBetaComponent
+    PortfolioBetaComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
