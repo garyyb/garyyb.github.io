@@ -84,18 +84,18 @@
 
 	body {
 		height: 100%;
-    background-image: -moz-linear-gradient(40deg, rgba(255, 165, 150, 0.5) 50%, rgba(0, 228, 255, 0.35));
-    background-image: -webkit-linear-gradient(40deg, rgba(255, 165, 150, 0.5) 50%, rgba(0, 228, 255, 0.35));
-    background-image: -ms-linear-gradient(40deg, rgba(255, 165, 150, 0.5) 50%, rgba(0, 228, 255, 0.35));
-    background-image: linear-gradient(40deg, rgba(255, 165, 150, 0.5) 50%, rgba(0, 228, 255, 0.35));
+    background-image: -moz-linear-gradient(40deg, rgba(255, 165, 150, 0.5) 45%, rgba(0, 228, 255, 0.35));
+    background-image: -webkit-linear-gradient(40deg, rgba(255, 165, 150, 0.5) 45%, rgba(0, 228, 255, 0.35));
+    background-image: -ms-linear-gradient(40deg, rgba(255, 165, 150, 0.5) 45%, rgba(0, 228, 255, 0.35));
+    background-image: linear-gradient(40deg, rgba(255, 165, 150, 0.5) 45%, rgba(0, 228, 255, 0.35));
 		background-repeat: repeat;
 		background-size: cover;
 		background-position: top left;
 		background-attachment: fixed;
-    -moz-transition: opacity 20s ease-out;
-    -webkit-transition: opacity 20s ease-out;
-    -ms-transition: opacity 20s ease-out;
-    transition: opacity 20s ease-out;
+    -moz-transition: opacity 50s ease-out;
+    -webkit-transition: opacity 50s ease-out;
+    -ms-transition: opacity 50s ease-out;
+    transition: opacity 50s ease-out;
 	}
 
 		body:after {
@@ -108,10 +108,10 @@
 			height: inherit;
 			opacity: 0;
 			z-index: 1;
-      background-image: -moz-linear-gradient(30deg, rgba(0, 228, 255, 0.35) 5%, rgba(255, 165, 150, 0.5));
-      background-image: -webkit-linear-gradient(30deg, rgba(0, 228, 255, 0.35) 5%, rgba(255, 165, 150, 0.5));
-      background-image: -ms-linear-gradient(30deg, rgba(0, 228, 255, 0.35) 5%, rgba(255, 165, 150, 0.5));
-      background-image: linear-gradient(30deg, rgba(0, 228, 255, 0.35) 5%, rgba(255, 165, 150, 0.5));
+      background-image: -moz-linear-gradient(30deg, rgba(0, 228, 255, 0.35) 20%, rgba(255, 165, 150, 0.5));
+      background-image: -webkit-linear-gradient(30deg, rgba(0, 228, 255, 0.35) 20%, rgba(255, 165, 150, 0.5));
+      background-image: -ms-linear-gradient(30deg, rgba(0, 228, 255, 0.35) 20%, rgba(255, 165, 150, 0.5));
+      background-image: linear-gradient(30deg, rgba(0, 228, 255, 0.35) 20%, rgba(255, 165, 150, 0.5));
 			background-repeat: no-repeat;
 			background-size: cover;
 			background-position: center center;
@@ -714,6 +714,7 @@
 		position: relative;
 		max-width: 100%;
 		min-width: 27em;
+    width: 75%;
 		padding: 4.5em 3em 3em 3em ;
 		background: #ffffff;
 		border-radius: 4px;
