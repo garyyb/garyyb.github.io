@@ -90,6 +90,7 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__portfolio_robocup_component__ = __webpack_require__("../../../../../src/app/portfolio-robocup.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__portfolio_wit_component__ = __webpack_require__("../../../../../src/app/portfolio-wit.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__portfolio_beta_component__ = __webpack_require__("../../../../../src/app/portfolio-beta.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__contact_component__ = __webpack_require__("../../../../../src/app/contact.component.ts");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -97,6 +98,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -115,6 +117,10 @@ var router = __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* RouterModule *
     {
         path: 'portfolio',
         component: __WEBPACK_IMPORTED_MODULE_5__portfolio_base_component__["a" /* PortfolioBaseComponent */],
+    },
+    {
+        path: 'contact',
+        component: __WEBPACK_IMPORTED_MODULE_10__contact_component__["a" /* ContactComponent */]
     }
 ]);
 var AppModule = (function () {
@@ -131,7 +137,8 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_6__portfolio_barnet_component__["a" /* PortfolioBarnetComponent */],
             __WEBPACK_IMPORTED_MODULE_7__portfolio_robocup_component__["a" /* PortfolioRobocupComponent */],
             __WEBPACK_IMPORTED_MODULE_8__portfolio_wit_component__["a" /* PortfolioWitComponent */],
-            __WEBPACK_IMPORTED_MODULE_9__portfolio_beta_component__["a" /* PortfolioBetaComponent */]
+            __WEBPACK_IMPORTED_MODULE_9__portfolio_beta_component__["a" /* PortfolioBetaComponent */],
+            __WEBPACK_IMPORTED_MODULE_10__contact_component__["a" /* ContactComponent */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -143,6 +150,39 @@ AppModule = __decorate([
 ], AppModule);
 
 //# sourceMappingURL=app.module.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/contact.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactComponent; });
+/**
+ * Created by Gary on 19-Jul-17.
+ */
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var ContactComponent = (function () {
+    function ContactComponent() {
+    }
+    return ContactComponent;
+}());
+ContactComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_0" /* Component */])({
+        selector: 'contact',
+        template: __webpack_require__("../../../../../src/app/templates/contact.component.html"),
+        styleUrls: []
+    })
+], ContactComponent);
+
+//# sourceMappingURL=contact.component.js.map
 
 /***/ }),
 
@@ -327,42 +367,49 @@ module.exports = "<content>\r\n  <h1>About me</h1>\r\n  <p>\r\n    Hi! <br/>\r\n
 /***/ "../../../../../src/app/templates/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!-- Main -->\n<div id=\"wrapper\" >\n  <section id=\"main\">\n    <header>\n      <span class=\"avatar\"><img src=\"assets/avatar.jpg\" width=\"100px\" height=\"100pxng bu\"></span>\n      <h1 class=\"fade\" id=\"name\" style=\"opacity: 0;\">Gary Bai</h1>\n      <p><a href=\"/about\">About Me</a> | <a href=\"/portfolio\">Portfolio</a> | <a href=\"#\">Contact Me</a></p>\n    </header>\n    <router-outlet></router-outlet>\n    <hr>\n    <footer>\n      <ul class=\"icons\">\n        <li><a href=\"https://www.linkedin.com/in/garyyb/\" class=\"fa-linkedin\">LinkedIn</a></li>\n        <li><a href=\"https://github.com/garyyb\" class=\"fa-github\">GitHub</a></li>\n      </ul>\n    </footer>\n  </section>\n\n  <!-- Footer -->\n  <footer id=\"footer\">\n    <ul class=\"copyright\">\n      <li>&copy; Gary Bai</li><li>Index Design: <a href=\"http://html5up.net\">HTML5 UP</a></li><li>Built using Angular</li>\n    </ul>\n  </footer>\n</div>\n"
+module.exports = "<!-- Main -->\n<div id=\"wrapper\" >\n  <section id=\"main\">\n    <header>\n      <span class=\"avatar\"><img src=\"assets/avatar.jpg\" width=\"100px\" height=\"100px\"></span>\n      <h1 class=\"fade\" id=\"name\" style=\"opacity: 0;\">Gary Bai</h1>\n      <p><a href=\"/about\">About Me</a> | <a href=\"/portfolio\">Portfolio</a> | <a href=\"/contact\">Contact Me</a></p>\n    </header>\n    <router-outlet></router-outlet>\n    <hr>\n    <footer>\n      <ul class=\"icons\">\n        <li><a href=\"https://www.linkedin.com/in/garyyb/\" class=\"fa-linkedin\">LinkedIn</a></li>\n        <li><a href=\"https://github.com/garyyb\" class=\"fa-github\">GitHub</a></li>\n        <li><a href=\"mailto:garyybai@gmail.com\" class=\"fa-envelope\">Email</a></li>\n      </ul>\n    </footer>\n  </section>\n\n  <!-- Footer -->\n  <footer id=\"footer\">\n    <ul class=\"copyright\">\n      <li>&copy; Gary Bai</li><li>Index Design: <a href=\"http://html5up.net\">HTML5 UP</a></li><li>Built using Angular</li>\n    </ul>\n  </footer>\n</div>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/templates/contact.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<content>\r\n  <h1>Contact</h1>\r\n</content>\r\n"
 
 /***/ }),
 
 /***/ "../../../../../src/app/templates/portfolio-barnet.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>Developer at BarNet Australia.</p>\r\n"
+module.exports = "<h3>Developer at <a href=\"https://barnet.com.au/\" style=\"color : cornflowerblue\">BarNet Australia</a></h3>\r\n<p>\r\n  I am a Full Stack Web Developer for BarNet. Technologies used include Play! for Scala, Angular, and MongoDB.\r\n  <br> <br>\r\n  BarNet is a specialist communications management company providing services to barristers and associated professionals. Our mission is to provide a compelling range of high quality data and voice communications and electronic research products and services.\r\n  <br> <br>\r\n  BarNet is also responsible for the development and maintenance of JADE (Judgments and Decisions Enhanced), a current awareness service that collects recent decisions of selected Australian Courts and Tribunals into an enhanced database.\r\n</p>\r\n"
 
 /***/ }),
 
 /***/ "../../../../../src/app/templates/portfolio-base.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<content>\r\n  <h1>My Portfolio</h1>\r\n  <div *ngIf=\"selected; else portfolio_index\">\r\n    <portfolio-barnet *ngIf=\"selected === 'barnet'\"></portfolio-barnet>\r\n    <portfolio-robocup *ngIf=\"selected ==='robocup'\"></portfolio-robocup>\r\n    <portfolio-wit *ngIf=\"selected === 'wit'\"></portfolio-wit>\r\n    <portfolio-beta *ngIf=\"selected === 'beta'\"></portfolio-beta>\r\n    <a (click)=\"unselect()\">return;</a>\r\n  </div>\r\n  <ng-template #portfolio_index>\r\n    Present:\r\n    <p>\r\n      <a (click)=\"select('barnet')\">Software Engineer at Barnet Australia</a>\r\n      <br/>\r\n      <a (click)=\"select('robocup')\">Developer for UNSW Australia Robocup SPL Team</a>\r\n      <br/>\r\n      <a (click)=\"select('wit')\">Writer for UNSW Women in Technology</a>\r\n      <br/>\r\n      <a (click)=\"select('beta')\">Writer for CSESoc Beta Magazine</a>\r\n      <br/>\r\n    </p>\r\n    Past:\r\n    <p>\r\n      —\r\n    </p>\r\n  </ng-template>\r\n</content>\r\n"
+module.exports = "<content>\r\n  <h1>My Portfolio</h1>\r\n  <div *ngIf=\"selected; else portfolio_index\">\r\n    <portfolio-barnet *ngIf=\"selected === 'barnet'\"></portfolio-barnet>\r\n    <portfolio-robocup *ngIf=\"selected ==='robocup'\"></portfolio-robocup>\r\n    <portfolio-wit *ngIf=\"selected === 'wit'\"></portfolio-wit>\r\n    <portfolio-beta *ngIf=\"selected === 'beta'\"></portfolio-beta>\r\n    <a (click)=\"unselect()\">return;</a>\r\n  </div>\r\n  <ng-template #portfolio_index>\r\n    Present:\r\n    <p>\r\n      <a (click)=\"select('barnet')\">Software Engineer at Barnet Australia</a>\r\n      <br/>\r\n      <a (click)=\"select('robocup')\">Developer for UNSW Australia Robocup SPL Team</a>\r\n      <br/>\r\n      <a (click)=\"select('wit')\">Writer for UNSW Women in Technology</a>\r\n      <br/>\r\n      <a (click)=\"select('beta')\">Writer for CSESoc βeta Magazine</a>\r\n      <br/>\r\n    </p>\r\n    Projects:\r\n    <p>\r\n      <a (click)=\"select('roomview')\">(Unofficial) Empty Room finder for UNSW</a>\r\n    </p>\r\n    Past:\r\n    <p>\r\n      —\r\n    </p>\r\n  </ng-template>\r\n</content>\r\n"
 
 /***/ }),
 
 /***/ "../../../../../src/app/templates/portfolio-beta.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>beta</p>\r\n"
+module.exports = "<h3>Writer for <a href=\"https://www.csesoc.unsw.edu.au/beta/\" style=\"color: cornflowerblue;\">CSESoc's ng βeta Magazine</a></h3>\r\n<p>\r\n  I currently write for βeta, a biweekly magazine targeted at Computer Science and Engineering (CSE) students\r\n  at UNSW. I write the regular piece, Tech Roundup, a summary of recent and pertinent news in the technology industry.\r\n</p>\r\n"
 
 /***/ }),
 
 /***/ "../../../../../src/app/templates/portfolio-robocup.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>Robocup.</p>\r\n"
+module.exports = "<h3>Developer for <a href=\"https://www.engineering.unsw.edu.au/computer-science-engineering/about-us/achievements/robocup\" style=\"color : cornflowerblue\">UNSW Australia</a> Robocup SPL Team</h3>\r\n\r\n<p>\r\n  I am currently on the UNSW Australia Robocup team. Robocup Standard Platform League (SPL) is an international competition in the development of\r\n  robots which are capable of autonomously playing soccer. UNSW fields a team consisted of undergraduate and postgraduate students.\r\n  <br><br>\r\n  I primarily work on the vision system.\r\n  In 2016, I developed an automated colour classification system for the purpose of identifying green and white elements of the field.\r\n  The system was written in C++. Development process included the use of libraries including <a href=\"http://opencv.org/\">OpenCV</a> and <a href=\"http://eigen.tuxfamily.org\">Eigen</a>.\r\n</p>\r\n"
 
 /***/ }),
 
 /***/ "../../../../../src/app/templates/portfolio-wit.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>WIT</p>\r\n"
+module.exports = "<h3>Writer for <a href=\"https://unswwit.com\" style=\"color: cornflowerblue;\">UNSW Women in Technology</a></h3>\r\n<p>\r\n  I'm a writer for the UNSW Women in Technology Society. I write many of the society's <a href=\"http://www.unswwit.com/ourblog/\">blog posts</a>, primarily focusing\r\n  on technology articles - tutorials, tips, and so on for our members.\r\n  <br><br>\r\n  I'm also involved in some exciting upcoming projects - stay tuned!\r\n</p>\r\n"
 
 /***/ }),
 
